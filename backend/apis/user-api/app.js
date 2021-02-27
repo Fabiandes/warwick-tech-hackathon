@@ -20,5 +20,6 @@ client.connect((err) => {
 
 app.locals.dbClient = client;
 
+router.get('/', (req, res) => res.send("Healthy!"));
 
 module.exports = app;
